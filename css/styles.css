@@ -63,6 +63,16 @@ h1, h2, h3, ul, p {
 
 /*HEADER*/
 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    }
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -79,7 +89,20 @@ h1, h2, h3, ul, p {
     color: #000000;
 }
 
+.nav-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav-list .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .current-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     font-weight: 500;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
@@ -87,13 +110,30 @@ h1, h2, h3, ul, p {
 }
 
 .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     font-weight: 500;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
 
+.contacts-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-list .item + .item {
+    margin-left: 50px;
+}
+
 .contacts-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     font-weight: 500;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
@@ -101,6 +141,11 @@ h1, h2, h3, ul, p {
 }
 
 /*HERO*/
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .hero {
     background: #2F303A;
