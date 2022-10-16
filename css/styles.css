@@ -21,6 +21,11 @@ body {
     background-color: var(--primary-background-color);
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .list {
     margin: 0;
     padding: 0;
@@ -136,16 +141,17 @@ h1, h2, h3, ul, p {
 
 /*HERO*/
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background: #2F303A;
 }
 
 .hero-title {
+    width: 696px;
+    height: 120px;
+    margin-bottom: 30px;
    
     font-weight: 900;
     font-size: 44px;
@@ -187,7 +193,7 @@ h1, h2, h3, ul, p {
     display: flex;
 }
 
-.benefits-list .benefits-item:not(:last-child) {
+.benefits-list .item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -213,11 +219,18 @@ h1, h2, h3, ul, p {
 }
 
 .activity-title {
+    margin-bottom: 50px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
     color: var(--title-text-color);
+}
+
+.activity-list {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*TEAM*/
@@ -227,6 +240,8 @@ h1, h2, h3, ul, p {
 }
 
 .team-title {
+    margin-bottom: 50px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
@@ -234,7 +249,15 @@ h1, h2, h3, ul, p {
     color: var(--title-text-color);
 }
 
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .team-list-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
@@ -254,6 +277,16 @@ h1, h2, h3, ul, p {
     background: var(--primary-background-color);
 }
 
+.portfolio-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-filter .item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .portfolio-filter-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -271,7 +304,28 @@ h1, h2, h3, ul, p {
     background: var(--accent-color); 
 }
 
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-list .item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-list .item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portfolio-list .item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
 .portfolio-title {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36/18);
@@ -289,6 +343,8 @@ h1, h2, h3, ul, p {
 
 .footer {
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-white {
@@ -297,6 +353,14 @@ h1, h2, h3, ul, p {
     font-size: 26px;
     line-height: calc(31/26);
     color: var(--primary-background-color);
+}
+
+.address-list {
+    margin-top: 20px;
+}
+
+.address-list .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .address-map-link {
