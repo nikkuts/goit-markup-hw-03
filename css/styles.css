@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -152,6 +146,7 @@ h1, h2, h3, ul, p {
 }
 
 .hero-title {
+   
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60/44);
@@ -185,9 +180,20 @@ h1, h2, h3, ul, p {
 
 .benefits {
     background: var(--primary-background-color);
+    padding-top: 94px;
+}
+
+.benefits-list {
+    display: flex;
+}
+
+.benefits-list .benefits-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .benefits-title {
+    margin-bottom: 10px;
+    
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
