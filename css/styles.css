@@ -62,6 +62,10 @@ h1, h2, h3, ul, p {
 
 /*HEADER*/
 
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -150,7 +154,8 @@ h1, h2, h3, ul, p {
 
 .hero-title {
     width: 696px;
-    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
    
     font-weight: 900;
@@ -163,12 +168,20 @@ h1, h2, h3, ul, p {
 }
 
 .hero-btn {
+    width: 216px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+            
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-background-color);
@@ -310,8 +323,12 @@ h1, h2, h3, ul, p {
 }
 
 .portfolio-list .item {
+    width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 
 .portfolio-list .item:nth-child(3n) {
@@ -325,6 +342,7 @@ h1, h2, h3, ul, p {
 .portfolio-title {
     margin-top: 20px;
     margin-bottom: 4px;
+    margin-left: 24px;
     
     font-weight: 700;
     font-size: 18px;
@@ -334,6 +352,9 @@ h1, h2, h3, ul, p {
 }
 
 .portfolio-text {
+    margin-bottom: 20px;
+    margin-left: 24px;
+    
     font-size: 16px;
     line-height: calc(30/16);
     color: var(--primary-text-color);
